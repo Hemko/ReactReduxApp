@@ -1,4 +1,8 @@
-import { CURRENCY_FETCH_SUCCESS, CURRENCY_FETCH_FAILURE } from '../constants/ActionTypes';
+import { CURRENCY_FETCH_REQUESTED, CURRENCY_FETCH_SUCCESS, CURRENCY_FETCH_FAILURE } from '../constants/ActionTypes';
+
+export const currencyFetchRequested = () => ({
+  type: CURRENCY_FETCH_REQUESTED
+});
 
 export const currencyFetchSuccess = (currency) => ({
   type: CURRENCY_FETCH_SUCCESS,

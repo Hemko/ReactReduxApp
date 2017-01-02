@@ -7,11 +7,12 @@ import App from './components/App';
 import Home from './components/Home';
 import NotFound from './components/NotFound';
 import configureStore from './store/configureStore';
+import { currencyFetchRequested } from './actions/Currency';
 
 const store = configureStore();
 
 // TODO: remove dispatch
-store.dispatch({type: 'CURRENCY_FETCH_REQUESTED'});
+store.dispatch(currencyFetchRequested());
 
 const injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();
