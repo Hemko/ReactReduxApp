@@ -8,7 +8,7 @@ const TransactionList = ({ transactions }) => (
     <Table>
       <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
         <TableRow>
-          <TableHeaderColumn>ID</TableHeaderColumn>
+          <TableHeaderColumn>Date</TableHeaderColumn>
           <TableHeaderColumn>Value</TableHeaderColumn>
           <TableHeaderColumn>Type</TableHeaderColumn>
         </TableRow>
@@ -18,6 +18,7 @@ const TransactionList = ({ transactions }) => (
           <Transaction
             key={transaction.id}
             id={transaction.id}
+            date={transaction.date}
             amount={transaction.amount}
             type={transaction.type}
           />

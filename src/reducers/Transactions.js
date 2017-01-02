@@ -5,6 +5,7 @@ const transaction = (state, action) => {
     case ADD_TRANSACTION:
       return {
         id: action.id,
+        date: action.date,
         amount: action.amount,
         type: action.transactionType
       }
