@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import About from './components/About';
 import App from './components/App';
 import Home from './components/Home';
+import Statistic from './components/Statistic';
 import NotFound from './components/NotFound';
 import configureStore from './store/configureStore';
 import { currencyFetchRequested } from './actions/Currency';
@@ -22,6 +23,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
       <Route path='/' component={App}>
         <IndexRoute component={Home} />
+        <Route path='statistic' component={Statistic} />
         <Route path='about' component={About} />
       </Route>
       <Route path='*' component={NotFound} />
