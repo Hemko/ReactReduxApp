@@ -1,9 +1,9 @@
 import { ADD_TRANSACTION } from '../constants/ActionTypes';
 
-export const addTransaction = (amount, transactionType) => ({
+export const addTransaction = (date, amount, transactionType) => ({
   type: ADD_TRANSACTION,
   id: Date.now(),
-  date: Date.now(),
+  date,
   transactionType,
   amount
 });

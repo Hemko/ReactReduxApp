@@ -4,20 +4,36 @@ import validate from '../forms/validate';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import { SelectField, TextField } from 'redux-form-material-ui';
+import { DatePicker, TextField, SelectField } from 'redux-form-material-ui';
 import { addTransaction } from '../actions/Transaction';
 
 const AddTransaction = (props) => {
   const { dispatch, handleSubmit, reset, pristine, submitting } = props;
 
   const submit = (values) => {
-    dispatch(addTransaction(parseInt(values.amount, 10), values.type));
+    dispatch(addTransaction(values.date, parseInt(values.amount, 10), values.type));
     dispatch(reset('AddTransactionForm'));
+  };
+
+  const formatVisibleDate = (date) => {
+    let month = date.getMonth() + 1;
+    month = month < 10 ? "0" + month : month;
+    let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
+    return day + "." + month + "." + date.getFullYear();
   };
 
   return (
     <MuiThemeProvider>
       <form onSubmit={handleSubmit(submit)}>
+        <div>
+          <Field name="date"
+            component={DatePicker}
+            hintText="Pick your date"
+            floatingLabelText="Date"
+            formatDate={formatVisibleDate}
+            format={null}
+          />
+        </div>
         <div>
           <Field name="amount"
             component={TextField}

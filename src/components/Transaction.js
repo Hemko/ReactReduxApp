@@ -18,7 +18,7 @@ const Transaction = props => {
 };
 
 Transaction.propTypes = {
-  date: PropTypes.number.isRequired,
+  date: PropTypes.object.isRequired,
   amount: PropTypes.number.isRequired,
   type: PropTypes.string.isRequired
 };
