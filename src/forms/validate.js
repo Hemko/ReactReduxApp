@@ -6,6 +6,10 @@ const validate = values => {
       errors[ field ] = 'Required';
     }
   });
+  const date = values.date;
+  if (date > new Date()) {
+    errors.date = 'Transaction date cannot be a future date.';
+  }
   const amount = parseInt(values.amount, 10);
   if (isNaN(amount)) {
     errors.amount = 'Amount must be a number!';
