@@ -8,7 +8,7 @@ const getReportByMonth = (transactions, month) => {
   for (let i = 0; i < transactionsCount; i++) {
     const transaction = transactions[i];
     if (transaction.date.getMonth() === month) {
-      if (transaction.type === 'in') {
+      if (transaction.type === 'income') {
         income += transaction.amount;
       } else {
         expenses += transaction.amount;

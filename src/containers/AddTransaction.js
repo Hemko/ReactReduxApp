@@ -45,8 +45,8 @@ const AddTransaction = (props) => {
           <Field name="type"
             component={SelectField}
             floatingLabelText="Type">
-            <MenuItem value={'in'} primaryText="Income" />
-            <MenuItem value={'out'} primaryText="Outcome" />
+            <MenuItem value={'income'} primaryText="Income" />
+            <MenuItem value={'expenses'} primaryText="Expenses" />
           </Field>
         </div>
         <RaisedButton
