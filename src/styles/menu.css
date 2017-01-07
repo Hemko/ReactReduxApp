@@ -1,0 +1,14 @@
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+
+.menu__item {
+  padding: 0 10px;
+}
+
+.menu__item_active {
+  color: rgb(0, 188, 212);
+  border-bottom: 2px solid rgb(0, 188, 212);
+}
