@@ -1,0 +1,7 @@
+.transaction__type_income {
+  color: green;
+}
+
+.transaction__type_expenses {
+  color: red;
+}

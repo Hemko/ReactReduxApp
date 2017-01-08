@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { TableRow, TableRowColumn } from 'material-ui/Table';
+import '../styles/transaction.css';
 
 const Transaction = props => {
   const date = new Date(props.date);
@@ -12,7 +13,9 @@ const Transaction = props => {
     <TableRow hoverable selectable={false}>
       <TableRowColumn>{dateString}</TableRowColumn>
       <TableRowColumn>{props.amount}</TableRowColumn>
-      <TableRowColumn>{props.type}</TableRowColumn>
+      <TableRowColumn className={"transaction__type transaction__type_" + props.type}>
+        {props.type}
+      </TableRowColumn>
     </TableRow>
   );
 };
