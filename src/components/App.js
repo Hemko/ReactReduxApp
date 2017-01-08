@@ -7,13 +7,13 @@ const App = (props) => (
     <h1>App</h1>
     <ul className="menu">
       <li className="menu__item">
-        <Link to='/' activeClassName='menu__item_active' onlyActiveOnIndex>Home</Link>
+        <Link to='/' className="menu__link" activeClassName='menu__link_active' onlyActiveOnIndex>Home</Link>
       </li>
       <li className="menu__item">
-        <Link to='/statistic' activeClassName='menu__item_active'>Statistic</Link>
+        <Link to='/statistic' className="menu__link" activeClassName='menu__link_active'>Statistic</Link>
       </li>
       <li className="menu__item">
-        <Link to='/about' activeClassName='menu__item_active'>About</Link>
+        <Link to='/about' className="menu__link" activeClassName='menu__link_active'>About</Link>
       </li>
     </ul>
     {props.children}
