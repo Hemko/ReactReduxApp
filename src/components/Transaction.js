@@ -16,6 +16,11 @@ const Transaction = props => {
       <TableRowColumn className={"transaction__type transaction__type_" + props.type}>
         {props.type}
       </TableRowColumn>
+      <TableRowColumn>
+        <span onClick={props.onRemove}>
+          DELETE
+        </span>
+      </TableRowColumn>
     </TableRow>
   );
 };
