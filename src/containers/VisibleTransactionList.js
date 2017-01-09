@@ -1,6 +1,6 @@
 import { connect } from 'react-redux';
 import TransactionList from '../components/TransactionList';
-import { removeTransaction } from '../actions/Transaction';
+import { deleteTransaction } from '../actions/Transaction';
 
 const sortTransactions = (first, second) => {
   var firstDate = new Date(first.date);
@@ -13,7 +13,7 @@ const mapStateToProps = (state) => ({
 });
 
 const mapDispatchToProps = ({
-  onRemoveButtonClick: removeTransaction
+  onDeleteButtonClick: deleteTransaction
 });
 
 const VisibleTransactionList = connect(

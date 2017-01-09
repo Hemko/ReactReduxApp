@@ -18,7 +18,7 @@ const Transaction = props => {
         {props.type}
       </TableRowColumn>
       <TableRowColumn>
-        <RaisedButton  onClick={props.onRemove}>
+        <RaisedButton  onClick={props.onDelete}>
           DELETE
         </RaisedButton >
       </TableRowColumn>

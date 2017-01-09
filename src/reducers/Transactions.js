@@ -1,4 +1,4 @@
-import { ADD_TRANSACTION, REMOVE_TRANSACTION } from '../constants/ActionTypes';
+import { ADD_TRANSACTION, DELETE_TRANSACTION } from '../constants/ActionTypes';
 
 const transaction = (state, action) => {
   switch (action.type) {
@@ -18,7 +18,7 @@ const transactions = (state = [], action) => {
   switch (action.type) {
     case ADD_TRANSACTION:
       return [...state, transaction(undefined, action)];
-    case REMOVE_TRANSACTION:
+    case DELETE_TRANSACTION:
       return state.filter((transaction) => {
         return transaction.id !== action.id;
       });

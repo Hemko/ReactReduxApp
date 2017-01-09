@@ -3,7 +3,7 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow } from 'material-ui/Table';
 import Transaction from './Transaction';
 
-const TransactionList = ({ transactions, onRemoveButtonClick }) => (
+const TransactionList = ({ transactions, onDeleteButtonClick }) => (
   <MuiThemeProvider>
     <Table>
       <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
@@ -17,7 +17,7 @@ const TransactionList = ({ transactions, onRemoveButtonClick }) => (
       <TableBody>
         {transactions.map(transaction =>
           <Transaction
-            onRemove={() => onRemoveButtonClick(transaction.id)}
+            onDelete={() => onDeleteButtonClick(transaction.id)}
             key={transaction.id}
             date={transaction.date}
             amount={transaction.amount}
@@ -35,7 +35,7 @@ TransactionList.propTypes = {
     amount: PropTypes.number.isRequired,
     type: PropTypes.string.isRequired
   }).isRequired).isRequired,
-  onRemoveButtonClick: PropTypes.func.isRequired
+  onDeleteButtonClick: PropTypes.func.isRequired
 }
 
 export default TransactionList;
