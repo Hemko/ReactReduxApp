@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { TableRow, TableRowColumn } from 'material-ui/Table';
+import RaisedButton from 'material-ui/RaisedButton';
 import '../styles/transaction.css';
 
 const Transaction = props => {
@@ -17,9 +18,9 @@ const Transaction = props => {
         {props.type}
       </TableRowColumn>
       <TableRowColumn>
-        <span onClick={props.onRemove}>
+        <RaisedButton  onClick={props.onRemove}>
           DELETE
-        </span>
+        </RaisedButton >
       </TableRowColumn>
     </TableRow>
   );
