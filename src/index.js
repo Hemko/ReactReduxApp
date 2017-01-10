@@ -5,6 +5,7 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import About from './components/About';
 import App from './components/App';
 import Home from './components/Home';
+import Categories from './components/Categories';
 import Statistic from './components/Statistic';
 import NotFound from './components/NotFound';
 import configureStore from './store/configureStore';
@@ -23,6 +24,7 @@ ReactDOM.render(
     <Router history={browserHistory}>
       <Route path='/' component={App}>
         <IndexRoute component={Home} />
+        <Route path='categories' component={Categories} />
         <Route path='statistic' component={Statistic} />
         <Route path='about' component={About} />
       </Route>

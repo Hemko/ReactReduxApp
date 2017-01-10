@@ -10,6 +10,9 @@ const App = (props) => (
         <Link to='/' className="menu__link" activeClassName='menu__link_active' onlyActiveOnIndex>Home</Link>
       </li>
       <li className="menu__item">
+        <Link to='/categories' className="menu__link" activeClassName='menu__link_active'>Categories</Link>
+      </li>
+      <li className="menu__item">
         <Link to='/statistic' className="menu__link" activeClassName='menu__link_active'>Statistic</Link>
       </li>
       <li className="menu__item">
