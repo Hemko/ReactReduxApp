@@ -29,7 +29,8 @@ const Transaction = props => {
 Transaction.propTypes = {
   date: PropTypes.object.isRequired,
   amount: PropTypes.number.isRequired,
-  type: PropTypes.string.isRequired
+  type: PropTypes.string.isRequired,
+  onDelete: PropTypes.func.isRequired
 };
 
 export default Transaction;
