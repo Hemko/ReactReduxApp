@@ -11,16 +11,16 @@ const Transaction = props => {
   const dateString = day + "." + month + "." + date.getFullYear();
 
   return (
-    <TableRow hoverable selectable={false}>
+    <TableRow className="transaction" hoverable selectable={false}>
       <TableRowColumn>{dateString}</TableRowColumn>
       <TableRowColumn>{props.amount}</TableRowColumn>
       <TableRowColumn className={"transaction__type transaction__type_" + props.type}>
         {props.type}
       </TableRowColumn>
       <TableRowColumn>
-        <RaisedButton  onClick={props.onDelete}>
-          DELETE
-        </RaisedButton >
+        <div className="transaction__toolbar">
+          <RaisedButton  onClick={props.onDelete}>DELETE</RaisedButton >
+        </div>
       </TableRowColumn>
     </TableRow>
   );

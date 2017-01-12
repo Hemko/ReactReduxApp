@@ -1,3 +1,11 @@
+.transaction:hover .transaction__toolbar {
+  opacity: 1;
+}
+
+.transaction__toolbar {
+  opacity: 0;
+}
+
 .transaction__type_income {
   color: green;
 }
