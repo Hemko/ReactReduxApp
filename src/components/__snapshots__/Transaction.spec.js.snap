@@ -1,0 +1,180 @@
+exports[`components Transaction initial render 1`] = `
+<tr
+  className={undefined}
+  style={
+    Object {
+      "borderBottom": "1px solid #e0e0e0",
+      "color": "rgba(0, 0, 0, 0.87)",
+      "height": 48,
+      "muiPrepared": true,
+    }
+  }>
+  <td
+    className={undefined}
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "fontSize": 13,
+        "height": 48,
+        "muiPrepared": true,
+        "overflow": "hidden",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "textAlign": "left",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap",
+      }
+    }>
+    27.12.2016
+  </td>
+  <td
+    className={undefined}
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "fontSize": 13,
+        "height": 48,
+        "muiPrepared": true,
+        "overflow": "hidden",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "textAlign": "left",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap",
+      }
+    }>
+    23
+  </td>
+  <td
+    className="transaction__type transaction__type_income"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "fontSize": 13,
+        "height": 48,
+        "muiPrepared": true,
+        "overflow": "hidden",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "textAlign": "left",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap",
+      }
+    }>
+    income
+  </td>
+  <td
+    className={undefined}
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    onMouseLeave={[Function]}
+    style={
+      Object {
+        "backgroundColor": "inherit",
+        "fontSize": 13,
+        "height": 48,
+        "muiPrepared": true,
+        "overflow": "hidden",
+        "paddingLeft": 24,
+        "paddingRight": 24,
+        "textAlign": "left",
+        "textOverflow": "ellipsis",
+        "whiteSpace": "nowrap",
+      }
+    }>
+    <div
+      className={undefined}
+      style={
+        Object {
+          "WebkitTapHighlightColor": "rgba(0,0,0,0)",
+          "backgroundColor": "#ffffff",
+          "borderRadius": "2px",
+          "boxShadow": "0 1px 6px rgba(0, 0, 0, 0.12),
+                 0 1px 4px rgba(0, 0, 0, 0.12)",
+          "boxSizing": "border-box",
+          "color": "rgba(0, 0, 0, 0.87)",
+          "display": "inline-block",
+          "fontFamily": "Roboto, sans-serif",
+          "minWidth": 88,
+          "muiPrepared": true,
+          "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+        }
+      }>
+      <button
+        disabled={false}
+        href={undefined}
+        onBlur={[Function]}
+        onClick={[Function]}
+        onFocus={[Function]}
+        onKeyDown={[Function]}
+        onKeyUp={[Function]}
+        onMouseDown={[Function]}
+        onMouseEnter={[Function]}
+        onMouseLeave={[Function]}
+        onMouseUp={[Function]}
+        onTouchEnd={[Function]}
+        onTouchStart={[Function]}
+        onTouchTap={[Function]}
+        style={
+          Object {
+            "WebkitTapHighlightColor": "rgba(0, 0, 0, 0)",
+            "backgroundColor": "#ffffff",
+            "border": 10,
+            "borderRadius": 2,
+            "boxSizing": "border-box",
+            "cursor": "pointer",
+            "display": "inline-block",
+            "fontFamily": "Roboto, sans-serif",
+            "fontSize": "inherit",
+            "fontWeight": "inherit",
+            "height": 36,
+            "lineHeight": "36px",
+            "margin": 0,
+            "muiPrepared": true,
+            "outline": "none",
+            "padding": 0,
+            "position": "relative",
+            "textAlign": "center",
+            "textDecoration": "none",
+            "transform": "translate(0, 0)",
+            "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+            "verticalAlign": null,
+            "width": "100%",
+          }
+        }
+        tabIndex={0}
+        type="button">
+        <div
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchStart={[Function]}>
+          <div
+            style={
+              Object {
+                "backgroundColor": false,
+                "borderRadius": 2,
+                "height": 36,
+                "muiPrepared": true,
+                "top": 0,
+                "transition": "all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms",
+              }
+            }>
+            DELETE
+          </div>
+        </div>
+      </button>
+    </div>
+  </td>
+</tr>
+`;
