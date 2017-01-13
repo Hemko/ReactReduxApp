@@ -1,0 +1,11 @@
+.range-report__header {
+  font-weight: bold;
+}
+
+.range-report__item_income {
+  color: green;
+}
+
+.range-report__item_expenses {
+  color: red;
+}

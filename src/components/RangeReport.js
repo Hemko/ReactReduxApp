@@ -1,11 +1,12 @@
 import React, { PropTypes } from 'react';
+import '../styles/rangeReport.css';
 
 const RangeReport = (props) => (
-    <div>
-      <p>{props.label}</p>
-      <p>Income: {props.income}</p>
-      <p>Expenses: {props.expenses}</p>
-    </div>
+  <div className="range-report">
+    <p className="range-report__header">{props.label}</p>
+    <p className="range-report__item range-report__item_income">Income: {props.income}</p>
+    <p className="range-report__item range-report__item_expenses">Expenses: {props.expenses}</p>
+  </div>
 );
 
 RangeReport.propTypes = {
