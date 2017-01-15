@@ -1,3 +1,4 @@
+let categoriesCount = 0;
 const initialState = {
   transactions: [{
     id: new Date('2016-12-27').getTime(),
@@ -29,6 +30,13 @@ const initialState = {
     date: new Date('2016-11-09'),
     amount: 12,
     type: "income"
+  }],
+  categories: [{
+    id: categoriesCount++,
+    name: "first"
+  }, {
+    id: categoriesCount++,
+    name: "second"
   }]
 };
 
