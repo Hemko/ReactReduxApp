@@ -20,12 +20,17 @@ const paperStyle = {
   display: 'inline-block',
 };
 
-const CategoryList = ({ transactions }) => (
+const CategoryList = ({ categories }) => (
   <MuiThemeProvider>
     <div>
       <Paper style={paperStyle} zDepth={1} circle={true} children={nearbyIcon} />
       <Paper style={paperStyle} zDepth={1} circle={true} children={nearbyIcon} />
       <Paper style={paperStyle} zDepth={1} circle={true} children={nearbyIcon} />
+      {categories.map(category =>
+        <div key={category.id}>
+          <span>{category.name}</span>
+        </div>
+      )}
     </div>
   </MuiThemeProvider>
 );
