@@ -5,7 +5,7 @@ import Transaction from './Transaction';
 
 const TransactionList = ({ transactions, onDeleteButtonClick }) => (
   <MuiThemeProvider>
-    <Table>
+    <Table className="transaction-list">
       <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
         <TableRow>
           <TableHeaderColumn>Date</TableHeaderColumn>
