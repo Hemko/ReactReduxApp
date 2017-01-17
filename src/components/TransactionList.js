@@ -9,8 +9,7 @@ const TransactionList = ({ transactions, onDeleteButtonClick }) => (
       <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
         <TableRow>
           <TableHeaderColumn>Date</TableHeaderColumn>
-          <TableHeaderColumn>Value</TableHeaderColumn>
-          <TableHeaderColumn>Type</TableHeaderColumn>
+          <TableHeaderColumn>Amount</TableHeaderColumn>
           <TableHeaderColumn></TableHeaderColumn>
         </TableRow>
       </TableHeader>

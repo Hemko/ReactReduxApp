@@ -9,6 +9,7 @@ const Transaction = props => {
   month = month < 10 ? "0" + month : month;
   let day = date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
   const dateString = day + "." + month + "." + date.getFullYear();
+  const prefix = props.type === 'income' ? '+' : '-';
 
   const iconStyle = {
     cursor: "pointer",
@@ -17,9 +18,8 @@ const Transaction = props => {
   return (
     <TableRow className="transaction" hoverable selectable={false}>
       <TableRowColumn>{dateString}</TableRowColumn>
-      <TableRowColumn>{props.amount}</TableRowColumn>
-      <TableRowColumn className={"transaction__type transaction__type_" + props.type}>
-        {props.type}
+      <TableRowColumn className={"transaction__value transaction__value_" + props.type}>
+        {prefix + props.amount}
       </TableRowColumn>
       <TableRowColumn>
         <div className="transaction__toolbar">

@@ -9,10 +9,10 @@
   opacity: 0;
 }
 
-.transaction__type_income {
+.transaction__value_income {
   color: green;
 }
 
-.transaction__type_expenses {
+.transaction__value_expenses {
   color: red;
 }
