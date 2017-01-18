@@ -2,13 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
+  padding: 1rem 1.25rem;
+  background-color: rgb(66, 133, 244);
 }
 
 .header__logo {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 .menu {
@@ -26,19 +26,18 @@
 }
 
 .menu__link {
-  color: black;
-  border-bottom: 2px solid rgba(0, 188, 212, 0);
+  color: white;
+  border-bottom: 2px solid rgba(255, 255, 255, 0);
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   transition-duration: 0.2s;
-  transition-property: border-bottom-color, color;
+  transition-property: border-bottom-color;
 }
 
 .menu__link:hover,
 .menu__link_active {
-  color: rgb(0, 188, 212);
-  border-bottom-color: rgba(0, 188, 212, 1);
+  border-bottom-color: rgba(255, 255, 255, 1);
 }

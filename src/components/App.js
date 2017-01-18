@@ -4,7 +4,7 @@ import '../styles/app.css';
 import '../styles/header.css';
 
 const App = (props) => (
-  <div className='container'>
+  <div>
     <header className='header'>
       <Link to='/' className="header__logo"><h1>App</h1></Link>
       <ul className="menu">
@@ -19,7 +19,9 @@ const App = (props) => (
         </li>
       </ul>
     </header>
-    {props.children}
+    <div className='container'>
+      {props.children}
+    </div>
   </div>
 );
 
