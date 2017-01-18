@@ -6,6 +6,11 @@
   padding-bottom: 1.25rem;
 }
 
+.header__logo {
+    text-decoration: none;
+    color: black;
+}
+
 .menu {
   display: flex;
   flex-direction: row;
@@ -23,6 +28,9 @@
 .menu__link {
   color: black;
   text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .menu__link:hover,

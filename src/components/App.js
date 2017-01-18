@@ -6,11 +6,8 @@ import '../styles/header.css';
 const App = (props) => (
   <div className='container'>
     <header className='header'>
-      <h1>App</h1>
+      <Link to='/' className="header__logo"><h1>App</h1></Link>
       <ul className="menu">
-        <li className="menu__item">
-          <Link to='/' className="menu__link" activeClassName='menu__link_active' onlyActiveOnIndex>Home</Link>
-        </li>
         <li className="menu__item">
           <Link to='/categories' className="menu__link" activeClassName='menu__link_active'>Categories</Link>
         </li>
