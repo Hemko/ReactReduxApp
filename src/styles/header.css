@@ -27,14 +27,18 @@
 
 .menu__link {
   color: black;
+  border-bottom: 2px solid rgba(0, 188, 212, 0);
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition-duration: 0.2s;
+  transition-property: border-bottom-color, color;
 }
 
 .menu__link:hover,
 .menu__link_active {
   color: rgb(0, 188, 212);
-  border-bottom: 2px solid rgb(0, 188, 212);
+  border-bottom-color: rgba(0, 188, 212, 1);
 }
