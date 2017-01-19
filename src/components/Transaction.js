@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { TableRow, TableRowColumn } from 'material-ui/Table';
 import IconDelete from 'material-ui/svg-icons/action/delete';
+import IconEdit from 'material-ui/svg-icons/editor/mode-edit';
 import '../styles/transaction.css';
 
 const Transaction = props => {
@@ -25,7 +26,14 @@ const Transaction = props => {
         <div className="transaction__toolbar">
           <IconDelete
             onClick={props.onDelete}
+            className="transaction__icon"
             style={iconStyle}
+            color={"rgba(0, 0, 0, 0.541176)"}
+            hoverColor={"rgba(0, 0, 0, 0.7)"}
+          />
+        <IconEdit
+            style={iconStyle}
+            className="transaction__icon"
             color={"rgba(0, 0, 0, 0.541176)"}
             hoverColor={"rgba(0, 0, 0, 0.7)"}
           />

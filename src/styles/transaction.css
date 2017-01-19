@@ -21,3 +21,10 @@
 .transaction__value_expenses {
   color: red;
 }
+
+.transaction__icon:not(:first-child) {
+  padding-left: 5px;
+}
+.transaction__icon:not(:last-child) {
+  padding-right: 5px;
+}
