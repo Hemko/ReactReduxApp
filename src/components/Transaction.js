@@ -37,7 +37,7 @@ const Transaction = props => {
             className="transaction__icon"
             color={"rgba(0, 0, 0, 0.541176)"}
             hoverColor={"rgba(0, 0, 0, 0.7)"}
-            />
+          />
         </div>
       </TableRowColumn>
     </TableRow>
