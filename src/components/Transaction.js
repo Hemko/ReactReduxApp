@@ -31,12 +31,13 @@ const Transaction = props => {
             color={"rgba(0, 0, 0, 0.541176)"}
             hoverColor={"rgba(0, 0, 0, 0.7)"}
           />
-        <IconEdit
+          <IconEdit
+            onClick={(e) => {console.log("Edit button. ", e);}}
             style={iconStyle}
             className="transaction__icon"
             color={"rgba(0, 0, 0, 0.541176)"}
             hoverColor={"rgba(0, 0, 0, 0.7)"}
-          />
+            />
         </div>
       </TableRowColumn>
     </TableRow>
