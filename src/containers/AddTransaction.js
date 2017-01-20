@@ -51,7 +51,7 @@ const AddTransaction = (props) => {
         </div>
         <RaisedButton
           type="submit"
-          label="Submit"
+          label="Add Transaction"
           primary
           disabled={pristine || submitting}
         />

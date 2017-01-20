@@ -24,7 +24,7 @@ const AddCategory = (props) => {
         </div>
         <RaisedButton
           type="submit"
-          label="Submit"
+          label="Add category"
           primary
           disabled={pristine || submitting}
         />
