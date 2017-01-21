@@ -5,32 +5,30 @@ import Paper from 'material-ui/Paper';
 import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
 import { blue500 } from 'material-ui/styles/colors';
 
+import '../styles/category.css';
+
 const iconStyle = {
   height: 42,
   width: 50,
-  marginTop: 29,
+  margin: "29px auto 0",
 };
-const nearbyIcon = <IconLocationOn style={iconStyle} color={blue500} />;
 
-const paperStyle = {
-  height: 100,
-  width: 100,
-  margin: 20,
-  textAlign: 'center',
-  display: 'inline-block',
-};
+const PaperContent = (name) => (
+  <div className="category__content">
+    <IconLocationOn style={iconStyle} color={blue500} />
+    <span>
+      {name}
+    </span>
+  </div>
+);
 
 const CategoryList = ({ categories }) => (
   <MuiThemeProvider>
-    <div>
-      <Paper style={paperStyle} zDepth={1} circle={true} children={nearbyIcon} />
-      <Paper style={paperStyle} zDepth={1} circle={true} children={nearbyIcon} />
-      <Paper style={paperStyle} zDepth={1} circle={true} children={nearbyIcon} />
-      {categories.map(category =>
-        <div key={category.id}>
-          <span>{category.name}</span>
-        </div>
-      )}
+    <div className="category-list">
+      {categories.map(category => {
+        const content = PaperContent(category.name);
+        return <Paper key={category.id} className="category" circle zDepth={1} children={content} />
+      })}
     </div>
   </MuiThemeProvider>
 );

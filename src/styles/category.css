@@ -1,0 +1,15 @@
+.category-list {
+  display: flex;
+}
+
+.category {
+  height: 100px;
+  width: 100px;
+  margin: 20px;
+}
+
+.category__content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
