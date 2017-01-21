@@ -1,14 +1,15 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import { TextField } from 'redux-form-material-ui';
+import { addCategory } from '../actions/Category';
 
 const AddCategory = (props) => {
   const { dispatch, handleSubmit, reset, pristine, submitting } = props;
 
   const submit = (values) => {
+    dispatch(addCategory(values.name));
     dispatch(reset('AddCategoryForm'));
   };
 
