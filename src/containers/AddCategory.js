@@ -1,6 +1,5 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 import { TextField } from 'redux-form-material-ui';
 import { addCategory } from '../actions/Category';
@@ -14,23 +13,21 @@ const AddCategory = (props) => {
   };
 
   return (
-    <MuiThemeProvider>
-      <form onSubmit={handleSubmit(submit)}>
-        <div>
-          <Field name="name"
-            component={TextField}
-            hintText="The name of the category"
-            floatingLabelText="Name"
-          />
-        </div>
-        <RaisedButton
-          type="submit"
-          label="Add category"
-          primary
-          disabled={pristine || submitting}
+    <form onSubmit={handleSubmit(submit)}>
+      <div>
+        <Field name="name"
+          component={TextField}
+          hintText="The name of the category"
+          floatingLabelText="Name"
         />
-      </form>
-    </MuiThemeProvider>
+      </div>
+      <RaisedButton
+        type="submit"
+        label="Add category"
+        primary
+        disabled={pristine || submitting}
+      />
+    </form>
   );
 };
 

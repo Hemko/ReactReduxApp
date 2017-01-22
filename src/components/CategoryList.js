@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import Paper from 'material-ui/Paper';
 
 import IconLocationOn from 'material-ui/svg-icons/communication/location-on';
@@ -23,14 +22,12 @@ const PaperContent = (name) => (
 );
 
 const CategoryList = ({ categories }) => (
-  <MuiThemeProvider>
-    <div className="category-list">
-      {categories.map(category => {
-        const content = PaperContent(category.name);
-        return <Paper key={category.id} className="category" circle zDepth={1} children={content} />
-      })}
-    </div>
-  </MuiThemeProvider>
+  <div className="category-list">
+    {categories.map(category => {
+      const content = PaperContent(category.name);
+      return <Paper key={category.id} className="category" circle zDepth={1} children={content} />
+    })}
+  </div>
 );
 
 CategoryList.propTypes = {
