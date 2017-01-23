@@ -5,9 +5,11 @@ import VisibleCategoryList from '../containers/VisibleCategoryList';
 
 const Categories = () => (
   <MuiThemeProvider>
-    <h1>Categories</h1>
-    <AddCategory />
-    <VisibleCategoryList />
+    <div>
+      <h1>Categories</h1>
+      <AddCategory />
+      <VisibleCategoryList />
+    </div>
   </MuiThemeProvider>
 );
 
