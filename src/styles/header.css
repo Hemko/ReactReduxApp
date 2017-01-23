@@ -28,6 +28,7 @@
 .menu__link {
   color: white;
   border-bottom: 2px solid rgba(255, 255, 255, 0);
+  padding-bottom: 7px;
   text-decoration: none;
   font-size: 14px;
   font-weight: bold;
