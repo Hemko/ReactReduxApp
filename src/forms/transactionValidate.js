@@ -1,4 +1,4 @@
-const validate = values => {
+const transactionValidate = values => {
   const errors = {};
   const requiredFields = [ 'date', 'amount', 'type' ];
   requiredFields.forEach(field => {
@@ -19,4 +19,4 @@ const validate = values => {
   return errors;
 };
 
-export default validate;
+export default transactionValidate;

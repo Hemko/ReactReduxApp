@@ -1,6 +1,6 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
-import validate from '../forms/validate';
+import transactionValidate from '../forms/transactionValidate';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -62,5 +62,5 @@ const AddTransaction = (props) => {
 
 export default reduxForm({
   form: 'AddTransactionForm',
-  validate
+  validate: transactionValidate
 })(AddTransaction);
