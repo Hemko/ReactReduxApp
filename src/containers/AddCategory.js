@@ -1,7 +1,8 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
+import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
-import { TextField } from 'redux-form-material-ui';
+import { TextField, SelectField } from 'redux-form-material-ui';
 import { addCategory } from '../actions/Category';
 
 const AddCategory = (props) => {
@@ -20,6 +21,14 @@ const AddCategory = (props) => {
           hintText="The name of the category"
           floatingLabelText="Name"
         />
+      </div>
+      <div>
+        <Field name="icon"
+          component={SelectField}
+          floatingLabelText="Icon">
+          <MenuItem value={'first'} primaryText="First icon" />
+          <MenuItem value={'second'} primaryText="Second icon" />
+        </Field>
       </div>
       <RaisedButton
         type="submit"
