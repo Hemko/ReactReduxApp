@@ -1,5 +1,6 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
+import categoryValidate from '../forms/categoryValidate';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 import { TextField, SelectField } from 'redux-form-material-ui';
@@ -41,5 +42,6 @@ const AddCategory = (props) => {
 };
 
 export default reduxForm({
-  form: 'AddCategoryForm'
+  form: 'AddCategoryForm',
+  validate: categoryValidate
 })(AddCategory);
