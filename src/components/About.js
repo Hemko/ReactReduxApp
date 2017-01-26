@@ -1,15 +1,16 @@
 import React from 'react';
+import '../styles/about.css';
 
 const About = () => (
   <div>
     <h1>This is about page!</h1>
-    <ul>
-      <li>React</li>
-      <li>Redux</li>
-      <li>React Router</li>
-      <li>Redux Form</li>
-      <li>Redux Saga</li>
-      <li>Material UI</li>
+    <ul className="technology-list">
+      <li className="technology-list__item">React</li>
+      <li className="technology-list__item">Redux</li>
+      <li className="technology-list__item">React Router</li>
+      <li className="technology-list__item">Redux Form</li>
+      <li className="technology-list__item">Redux Saga</li>
+      <li className="technology-list__item">Material UI</li>
     </ul>
   </div>
 );
