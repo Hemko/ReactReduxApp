@@ -3,7 +3,14 @@ import React from 'react';
 const About = () => (
   <div>
     <h1>This is about page!</h1>
-    // TODO add information about tools and technologies
+    <ul>
+      <li>React</li>
+      <li>Redux</li>
+      <li>React Router</li>
+      <li>Redux Form</li>
+      <li>Redux Saga</li>
+      <li>Material UI</li>
+    </ul>
   </div>
 );
 
