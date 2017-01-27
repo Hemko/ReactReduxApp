@@ -15,7 +15,7 @@ const iconStyle = {
 const PaperContent = (name) => (
   <div className="category__content">
     <IconLocationOn style={iconStyle} color={blue500} />
-    <span>
+    <span className="category__name">
       {name}
     </span>
   </div>
