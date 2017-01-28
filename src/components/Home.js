@@ -4,10 +4,14 @@ import VisibleTransactionList from '../containers/VisibleTransactionList';
 import VisibleCurrencyPanel from '../containers/VisibleCurrencyPanel';
 
 const Home = () => (
-  <div>
-    <VisibleCurrencyPanel />
-    <AddTransaction />
-    <VisibleTransactionList />
+  <div className="row">
+    <div className="small-4 columns">
+      <VisibleCurrencyPanel />
+      <AddTransaction />
+    </div>
+    <div className="small-8 columns">
+      <VisibleTransactionList />
+    </div>
   </div>
 );
 

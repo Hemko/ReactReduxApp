@@ -4,3 +4,13 @@
   padding-top: 2rem;
   font-family: 'Roboto';
 }
+
+.sidebar-section {
+  margin-bottom: 20px;
+}
+
+.sidebar-section__header {
+  font-size: 18px;
+  font-weight: bold;
+  color: gray;
+}

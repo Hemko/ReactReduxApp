@@ -9,7 +9,10 @@ const CurrencyPanel = (props) => {
   }
 
   return (
-    <div> {content} </div>
+    <div className="sidebar-section">
+      <span className="sidebar-section__header">Currency</span>
+      <div> {content} </div>
+    </div>
   );
 };
 

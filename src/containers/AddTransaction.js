@@ -24,38 +24,41 @@ const AddTransaction = (props) => {
 
   return (
     <MuiThemeProvider>
-      <form onSubmit={handleSubmit(submit)}>
-        <div>
-          <Field name="date"
-            component={DatePicker}
-            hintText="Pick your date"
-            floatingLabelText="Date"
-            formatDate={formatVisibleDate}
-            format={null}
+      <div className="sidebar-section">
+        <span className="sidebar-section__header">Add new transaction</span>
+        <form onSubmit={handleSubmit(submit)}>
+          <div>
+            <Field name="date"
+              component={DatePicker}
+              hintText="Pick your date"
+              floatingLabelText="Date"
+              formatDate={formatVisibleDate}
+              format={null}
+            />
+          </div>
+          <div>
+            <Field name="amount"
+              component={TextField}
+              hintText="The amount of money"
+              floatingLabelText="Amount"
+            />
+          </div>
+          <div>
+            <Field name="type"
+              component={SelectField}
+              floatingLabelText="Type">
+              <MenuItem value={'income'} primaryText="Income" />
+              <MenuItem value={'expenses'} primaryText="Expenses" />
+            </Field>
+          </div>
+          <RaisedButton
+            type="submit"
+            label="Add Transaction"
+            primary
+            disabled={pristine || submitting}
           />
-        </div>
-        <div>
-          <Field name="amount"
-            component={TextField}
-            hintText="The amount of money"
-            floatingLabelText="Amount"
-          />
-        </div>
-        <div>
-          <Field name="type"
-            component={SelectField}
-            floatingLabelText="Type">
-            <MenuItem value={'income'} primaryText="Income" />
-            <MenuItem value={'expenses'} primaryText="Expenses" />
-          </Field>
-        </div>
-        <RaisedButton
-          type="submit"
-          label="Add Transaction"
-          primary
-          disabled={pristine || submitting}
-        />
-      </form>
+        </form>
+      </div>
     </MuiThemeProvider>
   );
 };

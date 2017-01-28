@@ -11,6 +11,7 @@ import NotFound from './components/NotFound';
 import configureStore from './store/configureStore';
 import { currencyFetchRequested } from './actions/Currency';
 import './styles/normalize.css';
+import './styles/foundation.min.css';
 
 const store = configureStore();
 
