@@ -1,7 +1,6 @@
 import React from 'react';
 import { reduxForm, Field } from 'redux-form';
 import transactionValidate from '../forms/transactionValidate';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import MenuItem from 'material-ui/MenuItem';
 import RaisedButton from 'material-ui/RaisedButton';
 import { DatePicker, TextField, SelectField } from 'redux-form-material-ui';
@@ -23,43 +22,41 @@ const AddTransaction = (props) => {
   };
 
   return (
-    <MuiThemeProvider>
-      <div className="sidebar-section">
-        <span className="sidebar-section__header">Add new transaction</span>
-        <form onSubmit={handleSubmit(submit)}>
-          <div>
-            <Field name="date"
-              component={DatePicker}
-              hintText="Pick your date"
-              floatingLabelText="Date"
-              formatDate={formatVisibleDate}
-              format={null}
-            />
-          </div>
-          <div>
-            <Field name="amount"
-              component={TextField}
-              hintText="The amount of money"
-              floatingLabelText="Amount"
-            />
-          </div>
-          <div>
-            <Field name="type"
-              component={SelectField}
-              floatingLabelText="Type">
-              <MenuItem value={'income'} primaryText="Income" />
-              <MenuItem value={'expenses'} primaryText="Expenses" />
-            </Field>
-          </div>
-          <RaisedButton
-            type="submit"
-            label="Add Transaction"
-            primary
-            disabled={pristine || submitting}
+    <div className="sidebar-section">
+      <span className="sidebar-section__header">Add new transaction</span>
+      <form onSubmit={handleSubmit(submit)}>
+        <div>
+          <Field name="date"
+            component={DatePicker}
+            hintText="Pick your date"
+            floatingLabelText="Date"
+            formatDate={formatVisibleDate}
+            format={null}
           />
-        </form>
-      </div>
-    </MuiThemeProvider>
+        </div>
+        <div>
+          <Field name="amount"
+            component={TextField}
+            hintText="The amount of money"
+            floatingLabelText="Amount"
+          />
+        </div>
+        <div>
+          <Field name="type"
+            component={SelectField}
+            floatingLabelText="Type">
+            <MenuItem value={'income'} primaryText="Income" />
+            <MenuItem value={'expenses'} primaryText="Expenses" />
+          </Field>
+        </div>
+        <RaisedButton
+          type="submit"
+          label="Add Transaction"
+          primary
+          disabled={pristine || submitting}
+        />
+      </form>
+    </div>
   );
 };
 

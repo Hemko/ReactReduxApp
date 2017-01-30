@@ -1,31 +1,28 @@
 import React, { PropTypes } from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import { Table, TableBody, TableHeader, TableHeaderColumn, TableRow } from 'material-ui/Table';
 import Transaction from './Transaction';
 
 const TransactionList = ({ transactions, onDeleteButtonClick }) => (
-  <MuiThemeProvider>
-    <Table className="transaction-list">
-      <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
-        <TableRow>
-          <TableHeaderColumn>Date</TableHeaderColumn>
-          <TableHeaderColumn>Amount</TableHeaderColumn>
-          <TableHeaderColumn></TableHeaderColumn>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
-        {transactions.map(transaction =>
-          <Transaction
-            onDelete={() => onDeleteButtonClick(transaction.id)}
-            key={transaction.id}
-            date={transaction.date}
-            amount={transaction.amount}
-            type={transaction.type}
-          />
-        )}
-      </TableBody>
-    </Table>
-  </MuiThemeProvider>
+  <Table className="transaction-list">
+    <TableHeader displaySelectAll={false} adjustForCheckbox={false}>
+      <TableRow>
+        <TableHeaderColumn>Date</TableHeaderColumn>
+        <TableHeaderColumn>Amount</TableHeaderColumn>
+        <TableHeaderColumn></TableHeaderColumn>
+      </TableRow>
+    </TableHeader>
+    <TableBody>
+      {transactions.map(transaction =>
+        <Transaction
+          onDelete={() => onDeleteButtonClick(transaction.id)}
+          key={transaction.id}
+          date={transaction.date}
+          amount={transaction.amount}
+          type={transaction.type}
+        />
+      )}
+    </TableBody>
+  </Table>
 );
 
 TransactionList.propTypes = {
