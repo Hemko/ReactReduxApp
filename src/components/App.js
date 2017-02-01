@@ -1,5 +1,6 @@
 import React, { PropTypes }  from 'react';
 import { Link } from 'react-router';
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import '../styles/app.css';
 import '../styles/header.css';
 
@@ -20,7 +21,9 @@ const App = (props) => (
       </ul>
     </header>
     <div className='container'>
-      {props.children}
+      <MuiThemeProvider>
+        {props.children}
+      </MuiThemeProvider>
     </div>
   </div>
 );
