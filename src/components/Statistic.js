@@ -4,7 +4,7 @@ import '../styles/statistic.css';
 
 const Statistic = () => (
   <div className="row">
-    <div className="small-12 columns">
+    <div className="columns">
       <VisibleMonthReport />
     </div>
   </div>
