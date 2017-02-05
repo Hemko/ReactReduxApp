@@ -8,7 +8,7 @@ const RangeReport = (props) => {
     : "range-report__item_expenses";
 
   return <div className="range-report">
-    <p className="range-report__header">{props.label}</p>
+    <span className="range-report__header">{props.label}</span>
     <p className="range-report__item range-report__item_income">Income: {props.income}</p>
     <p className="range-report__item range-report__item_expenses">Expenses: {props.expenses}</p>
     <p className={"range-report__item " + totalClassName}>Total: {total}</p>

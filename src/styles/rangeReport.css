@@ -1,6 +1,7 @@
 .range-report__header {
   font-size: 18px;
   font-weight: bold;
+  color: gray;
 }
 
 .range-report__item_income {

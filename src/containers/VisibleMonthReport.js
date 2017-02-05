@@ -29,7 +29,7 @@ const mapStateToProps = (state) => {
   const report = getReportByMonth(state.transactions, date.getMonth());
 
   return {
-    label: "This month",
+    label: "Current month",
     income: report.income,
     expenses: report.expenses
   };
