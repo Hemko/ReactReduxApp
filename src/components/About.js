@@ -12,6 +12,8 @@ const About = () => (
         <li className="technology-list__item">Redux Form</li>
         <li className="technology-list__item">Redux Saga</li>
         <li className="technology-list__item">Material UI</li>
+        <li className="technology-list__item">d3js</li>
+        <li className="technology-list__item">Immutable.js</li>
       </ul>
     </div>
   </div>
