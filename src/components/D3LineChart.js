@@ -15,7 +15,7 @@ class D3LineChart extends React.Component {
       {day:'02-18-2016',count:150}
     ];
 
-    var margin = {top: 5, right: 50, bottom: 20, left: 50},
+    const margin = {top: 20, right: 20, bottom: 30, left: 50},
       w = this.props.width - (margin.left + margin.right),
       h = this.props.height - (margin.top + margin.bottom);
 
@@ -24,6 +24,20 @@ class D3LineChart extends React.Component {
     data.forEach(function (d) {
       d.date = parseDate(d.day);
     });
+
+    var x = d3.scaleTime()
+      .domain(d3.extent(data, function(d) {
+        return d.date;
+      }))
+      .rangeRound([0, w]);
+
+    var y = d3.scaleLinear()
+      .domain([0, d3.max(data, function(d) {
+        return d.count;
+      })])
+      .range([h, 0]);
+
+
     return <svg ref="svg" width={this.props.width} height={this.props.height}>
     </svg>;
   }
