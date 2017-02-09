@@ -37,8 +37,21 @@ class D3LineChart extends React.Component {
       })])
       .range([h, 0]);
 
+    var line = d3.line()
+      .x(function (d) {
+        return x(d.date);
+      })
+      .y(function (d) {
+        return y(d.count);
+      })
+      .curve(d3.curveCardinal);
+
+    var transform = "translate(" + margin.left + "," + margin.top + ")";
 
     return <svg ref="svg" width={this.props.width} height={this.props.height}>
+      <g transform={transform}>
+        <path className="line" d={line(data)} />
+      </g>
     </svg>;
   }
 }
