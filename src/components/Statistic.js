@@ -9,7 +9,7 @@ const Statistic = () => (
       <VisibleMonthReport />
     </div>
     <div className="medium-12 large-8 columns">
-      <D3LineChart />
+      <D3LineChart width="100" height="100"/>
     </div>
   </div>
 );

@@ -24,6 +24,8 @@ class D3LineChart extends React.Component {
     data.forEach(function (d) {
       d.date = parseDate(d.day);
     });
+    return <svg ref="svg" width={this.props.width} height={this.props.height}>
+    </svg>;
   }
 }
 
