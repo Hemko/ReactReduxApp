@@ -54,7 +54,7 @@ class D3LineChart extends React.Component {
 
     return <svg ref="svg" width={this.props.width} height={this.props.height} style={style}>
       <g transform={transform}>
-        <path className="line" d={line(data)} />
+        <path className="line" d={line(data)} fill="none" stroke="blue" />
       </g>
     </svg>;
   }
