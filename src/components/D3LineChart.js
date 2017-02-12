@@ -4,6 +4,10 @@ import * as d3 from 'd3';
 class D3LineChart extends React.Component {
 
   render () {
+    const style = {
+      border: "1px solid black"
+    };
+
     var data=[
       {day:'02-11-2016',count:180},
       {day:'02-12-2016',count:250},
@@ -48,7 +52,7 @@ class D3LineChart extends React.Component {
 
     var transform = "translate(" + margin.left + "," + margin.top + ")";
 
-    return <svg ref="svg" width={this.props.width} height={this.props.height}>
+    return <svg ref="svg" width={this.props.width} height={this.props.height} style={style}>
       <g transform={transform}>
         <path className="line" d={line(data)} />
       </g>
