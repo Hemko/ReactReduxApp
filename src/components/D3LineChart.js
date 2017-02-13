@@ -7,17 +7,8 @@ class D3LineChart extends React.Component {
     const style = {
       border: "1px solid black"
     };
-
-    var data=[
-      {day:'02-11-2016',count:180},
-      {day:'02-12-2016',count:250},
-      {day:'02-13-2016',count:150},
-      {day:'02-14-2016',count:496},
-      {day:'02-15-2016',count:140},
-      {day:'02-16-2016',count:380},
-      {day:'02-17-2016',count:100},
-      {day:'02-18-2016',count:150}
-    ];
+    
+    const data = this.props.data;
 
     const margin = {top: 20, right: 20, bottom: 30, left: 50},
       w = this.props.width - (margin.left + margin.right),
