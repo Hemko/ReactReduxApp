@@ -4,11 +4,12 @@ import * as d3 from 'd3';
 class D3LineChart extends React.Component {
 
   render () {
+    const { transactions, data } = this.props;
+
+    console.log(transactions, data);
     const style = {
       border: "1px solid black"
     };
-
-    const data = this.props.data;
 
     const margin = {top: 20, right: 20, bottom: 30, left: 50},
       w = this.props.width - (margin.left + margin.right),

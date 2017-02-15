@@ -1,6 +1,6 @@
 import React from 'react';
 import VisibleMonthReport from '../containers/VisibleMonthReport';
-import D3LineChart from './D3LineChart';
+import VisibleD3LineChart from '../containers/VisibleD3LineChart';
 import '../styles/statistic.css';
 
 var data=[
@@ -20,7 +20,7 @@ const Statistic = () => (
       <VisibleMonthReport />
     </div>
     <div className="medium-12 large-8 columns">
-      <D3LineChart width="400" height="300" data={data}/>
+      <VisibleD3LineChart width="400" height="300" data={data}/>
     </div>
   </div>
 );
