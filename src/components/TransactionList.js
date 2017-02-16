@@ -16,6 +16,7 @@ const TransactionList = ({ transactions, onDeleteButtonClick }) => (
         <Transaction
           onDelete={() => onDeleteButtonClick(transaction.id)}
           key={transaction.id}
+          id={transaction.id}
           date={transaction.date}
           amount={transaction.amount}
           type={transaction.type}

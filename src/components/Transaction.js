@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { TableRow, TableRowColumn } from 'material-ui/Table';
+import { Link } from 'react-router';
 import IconDelete from 'material-ui/svg-icons/action/delete';
 import IconEdit from 'material-ui/svg-icons/editor/mode-edit';
 import '../styles/transaction.css';
@@ -18,7 +19,7 @@ const Transaction = props => {
 
   return (
     <TableRow className="transaction" hoverable selectable={false}>
-      <TableRowColumn>{dateString}</TableRowColumn>
+      <TableRowColumn><Link to={`transaction/${props.id}/`}>{dateString}</Link></TableRowColumn>
       <TableRowColumn className={"transaction__value transaction__value_" + props.type}>
         {prefix + props.amount}
       </TableRowColumn>
