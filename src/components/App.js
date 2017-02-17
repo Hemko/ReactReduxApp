@@ -1,4 +1,5 @@
 import React, { PropTypes }  from 'react';
+import Helmet from 'react-helmet';
 import { Link } from 'react-router';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import '../styles/app.css';
