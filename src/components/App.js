@@ -7,6 +7,7 @@ import '../styles/header.css';
 
 const App = (props) => (
   <div>
+    <Helmet title="Transaction app" />
     <header className='header'>
       <div className="row align-justify align-middle">
         <div className="columns">
