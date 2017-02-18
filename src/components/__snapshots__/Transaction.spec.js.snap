@@ -28,7 +28,11 @@ exports[`components Transaction initial render 1`] = `
         "whiteSpace": "nowrap",
       }
     }>
-    27.12.2016
+    <a
+      onClick={[Function]}
+      style={Object {}}>
+      27.12.2016
+    </a>
   </td>
   <td
     className="transaction__value transaction__value_income"
