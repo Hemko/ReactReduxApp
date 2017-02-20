@@ -14,12 +14,6 @@ class D3LineChart extends React.Component {
       w = this.props.width - (margin.left + margin.right),
       h = this.props.height - (margin.top + margin.bottom);
 
-    //const parseDate = d3.timeParse("%m-%d-%Y");
-
-    /*transactions.forEach(function (d) {
-      d.date = parseDate(d.day);
-    });*/
-console.log(transactions);
     const x = d3.scaleTime()
       .domain(d3.extent(transactions, function(d) {
         return d.date;
